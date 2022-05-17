@@ -1,0 +1,54 @@
+li>a[href="nginx.org"]::before {
+    content: "\00D7";
+    padding-right: 10px;
+    color: red;
+}
+
+li>a[href="test.www.link"]::before {
+    content: "\00D7";
+    padding-right: 10px;
+    color: red;
+}
+
+li>a::before {
+    content: "\00BB" " ";
+    padding-right: 10px;
+}
+
+li>a[href="freecodecamp.org"]::after {
+    content: "\21D2";
+    color: coral;
+    
+}
+li>a[href="shema.org"]::after {
+    content: "\21D2";
+    color: coral;
+}
+
+li>a[href="shema.org"]:hover::after {
+    content: "\2026" "last symbol is a";
+    color: coral;
+}
+
+
+ul {
+
+}
+
+ul>li {
+    padding-right: 10px;
+    color: blue;
+    text-decoration: underline;
+}
+
+li::marker {
+    color: black;
+}
+
+a[href="freecodecamp.org"] {
+    color: green ;
+}
+
+a[href="sitemaps.org"] {
+    color: green;
+}
